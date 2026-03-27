@@ -3,6 +3,7 @@ import sympy as sp
 import schemdraw
 import schemdraw.elements as elm
 
+
 class Wire:
     def __init__(self, n1:int, n2:int):
         self.n1 = n1
