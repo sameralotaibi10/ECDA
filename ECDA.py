@@ -1,7 +1,7 @@
 #ECDA ---> Electrical Circuit Design & Analysis
 import sympy as sp
-import schemdraw
-import schemdraw.elements as elm
+import schemdraw # not ready/useful yet
+import schemdraw.elements as elm # not ready/useful yet
 
 
 class Wire:
@@ -152,20 +152,20 @@ class Circuit:   #class |circuit| have 3 |fun.| 1 inif(element and node) 2 add(t
     # lambda self:return self 
     
 
-    def show(self): # not ready/useful
-        d = schemdraw.Drawing()
-        for e in self.elements:
-            if isinstance(e, Resistor):
-                a,b=e.n1,e.n2
-                d.add(elm.Resistor().label(f'{e.R}Ω'))
-            elif isinstance(e, VoltageSource):
-                d.add(elm.SourceV().label(f'{e.V}V'))
+    # def show(self): # not ready/useful 
+    #     d = schemdraw.Drawing()
+    #     for e in self.elements:
+    #         if isinstance(e, Resistor):
+    #             a,b=e.n1,e.n2
+    #             d.add(elm.Resistor().label(f'{e.R}Ω'))
+    #         elif isinstance(e, VoltageSource):
+    #             d.add(elm.SourceV().label(f'{e.V}V'))
            
-        d.draw()
+    #     d.draw()
 
  
 print('\n','='*50)
- # Example 
+# Example 
 E = Circuit()
 E.penfrq(60)
 E.add(VoltageSource(1, 0, 120))   # VS1
