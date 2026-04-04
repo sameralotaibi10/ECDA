@@ -1,4 +1,4 @@
-```markdown
+
 # ECDA: Electrical Circuit Designer & Analyzer ⚡
 > **Advanced Symbolic Nodal Analysis Solver for Complex Electrical Networks**
 
